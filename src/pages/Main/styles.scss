@@ -18,3 +18,14 @@
     font-size: 2rem;
   }
 }
+
+form {
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    @extend input;
+  }
+}
