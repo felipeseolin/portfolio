@@ -6,12 +6,27 @@ const Nav = () => (
         <nav>
 
             <div className="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul className="flex flex-start">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
+                <ul className="flex flex-space-evenly">
+                    <li>
+                        <a href="#">Início</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled" href="#">Desativado</a>
+                    <li>
+                        <a href="#">Detalhes</a>
+                    </li>
+                    <li>
+                        <a href="">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Meus trabalhos</a>
+                    </li>
+                    <li>
+                        <a href="">Mais Informações</a>
+                    </li>
+                    <li>
+                        <a href="">Contatos</a>
                     </li>
                 </ul>
             </div>

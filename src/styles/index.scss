@@ -18,17 +18,33 @@ body {
 section {
   margin: calcSize(2px) 0;
   padding: 0 20vw;
-}
+  min-height: 75vh;
 
+  h2 {
+    padding-top: calcSize(2px);
+    margin-bottom: 0;
+  }
 
-section h2 {
-  padding: calcSize(2px) 0;
+  & > div {
+    min-height: 30vh;
+  }
 }
 
 p {
   line-height: 1.4rem;
   text-indent: 2rem;
   text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: $blue-lagoon;
+
+  &:hover {
+    @extend a;
+    color: $observatory;
+  }
+
 }
 
 
@@ -42,6 +58,13 @@ p {
 
 .underline {
   text-decoration: underline;
+}
+
+
+.description {
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
 }
 
 // FLEX CLASS
@@ -75,4 +98,19 @@ p {
 
 .flex-space-evenly {
   justify-content: space-evenly;
+}
+
+
+
+// COLOR MODE
+
+#color-mode {
+  position: fixed;
+  bottom: calcSize(1px);
+  right: calcSize(2px);
+
+  img {
+    height: calcSize(5px);
+    cursor: pointer;
+  }
 }
