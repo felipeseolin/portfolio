@@ -1,11 +1,20 @@
+@import "../../styles/functions";
+
 .hero {
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 #about-me {
-
   img {
     border-radius: 50%;
     height: 200px;
+    margin-right: calcSize(2px);
+  }
+
+  h1 {
+    margin-bottom: calcSize(2px);
+    font-size: 2rem;
   }
 }
