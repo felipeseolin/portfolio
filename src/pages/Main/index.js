@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 import "./styles.scss";
 import Nav from "../../components/Nav";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Main = () => {
     return (
@@ -14,7 +15,9 @@ const Main = () => {
             <section id="about-me" className="flex nowrap center-all">
                 <img src="https://picsum.photos/id/565/500/500" alt="Foto do Felipe Seolin Bento"/>
                 <div>
-                    <h1>Felipe Seolin Bento</h1>
+                    <ScrollAnimation animateIn="fadeIn" duration="2">
+                        <h1>Felipe Seolin Bento</h1>
+                    </ScrollAnimation>
                     <p>
                         Eu sou um aluno de Engenharia de Software na Universidade Tecnológica Federal do Paraná, câmpus
                         Cornélio Procópio e este é o meu portfólio, fique a vontade de ver e conhecer um pouco mais sobre
