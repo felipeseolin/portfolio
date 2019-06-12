@@ -18,7 +18,7 @@ body {
 section {
   margin: calcSize(2px) 0;
   padding: 0 20vw;
-  min-height: 75vh;
+  min-height: 100vh;
 
   h2 {
     padding-top: calcSize(2px);
@@ -27,6 +27,7 @@ section {
 
   & > div {
     min-height: 30vh;
+    margin-top: calcSize(4px);
   }
 }
 
@@ -62,8 +63,9 @@ a {
 
 
 .description {
+  font-size: .8em;
   text-indent: 0;
-  padding: 0;
+  padding: 3px;
   margin: 0;
 }
 

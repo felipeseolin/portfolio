@@ -20,17 +20,22 @@ const Main = () => {
                     </ScrollAnimation>
                     <p>
                         Eu sou um aluno de Engenharia de Software na Universidade Tecnológica Federal do Paraná, câmpus
-                        Cornélio Procópio e este é o meu portfólio, fique a vontade de ver e conhecer um pouco mais sobre
-                        mim e sobre o meu trabalho. É importante ressaltar que esta página está sempre em construção!
+                        Cornélio Procópio e este é o meu portfólio, fique a vontade de ver e conhecer um pouco mais
+                        sobre mim e sobre o meu trabalho.
+                        É importante ressaltar que esta página está sempre em construção!
                     </p>
-                    <a href="https://google.com">Baixe meu currículo aqui</a>
+                    <p>
+                        Se desejar baixar meu currículo (CV) é só clicar <a href="https://google.com"> aqui</a>.
+                    </p>
                 </div>
+
             </section>
 
             <section id="details">
                 <h2 className="font-teal">Detalhes</h2>
                 <p className="description">
-                    Aqui estão algumas informações a respeito de meus interesses, idiomas, formação e atividades desenvolvidas.
+                    Aqui estão algumas informações a respeito de meus interesses, idiomas, formação e atividades
+                    desenvolvidas.
                 </p>
                 <div id="interests">
                     <h3 className="font-green-haze">Interesses</h3>
