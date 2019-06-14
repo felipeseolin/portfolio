@@ -6,7 +6,7 @@ import Main from "../pages/Main";
 class Router extends Component{
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="#" component={Main} />
                     <Route exact path="/" component={Main} />
