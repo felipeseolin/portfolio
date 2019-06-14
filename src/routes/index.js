@@ -8,6 +8,7 @@ class Router extends Component{
         return (
             <BrowserRouter>
                 <Switch>
+                    <Route exact path="#" component={Main} />
                     <Route exact path="/" component={Main} />
                 </Switch>
             </BrowserRouter>
