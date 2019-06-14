@@ -2,6 +2,9 @@ import React, {Fragment} from "react";
 import "./styles.scss";
 import Nav from "../../components/Nav";
 import ScrollAnimation from 'react-animate-on-scroll';
+import ChangeColor from "../../components/ChangeColor";
+import Works from "../../components/Works";
+import Form from "../../components/Form";
 
 const Main = () => {
     return (
@@ -91,10 +94,35 @@ const Main = () => {
 
             <section id="skills">
                 <h2 className="font-teal">Habilidades</h2>
-                <p>Abaixo estão listadas algumas de minhas habilidades:</p>
+                <p>Abaixo estão listadas algumas de minhas habilidades.</p>
 
                 <ul>
-                    <li>AAAA</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Angular 7</li>
+                    <li>React JS</li>
+                    <li>Node</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Heroku</li>
+                    <li>Github</li>
+                    <li>Gitlab</li>
+                    <li>Bitbucket</li>
+                    <li>Scrum</li>
+                    <li>Kanban</li>
+                    <li>Engenharia de Software</li>
+                    <li>Java</li>
+                    <li>Linguagem C</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Corel Draw</li>
+                    <li>Comunicação</li>
+                    <li>Liderança em Projetos</li>
                 </ul>
             </section>
 
@@ -102,9 +130,7 @@ const Main = () => {
                 <h2 className="font-teal">Blog</h2>
             </section>
 
-            <section id="works">
-                <h2 className="font-teal">Trabalhos Desenvolvidos</h2>
-            </section>
+            <Works/>
 
             <section id="more">
                 <h2 className="font-teal">Maiores Informações</h2>
@@ -138,19 +164,21 @@ const Main = () => {
                 <div id="work-review">
                     <h3 className="font-green-haze">Contato com a profisão</h3>
 
-                    <h4>Design Gráfico</h4>
+                    <h4>Design Gráfico / WebDesign</h4>
                     <p>
-                        O primeiro contato profissional que possui foi com a área de design gráfico, onde realizei
-                        alguns trabalhos freelancer na minha cidade. Atualmente faço menos trabalhos deste tipo, porém
+                        O primeiro contato profissional que possui foi com a área de design gráfico, já realizando
+                        algusn trabalhos independentes. Atualmente faço menos trabalhos deste tipo, porém
                         continuo me interessando muito por esta área e gostaria de aperfeiçoar meus conhecimentos.
+                        Isso foi possível graças a um curso profissionalizante de WebDesign onde aprendi
+                        <span className="bold"> Photoshop, Corel Draw, Dreamweaver e Flash</span>.
                     </p>
 
-                    <h4>Estágio em Desenvolvimento Full Stack Web</h4>
+                    <h4>Estágio em Desenvolvimento Web Full Stack</h4>
                     <p>
                         Em maio de 2018 ingressei no estágio de desenvolvimento web na UTFPR, o qual eu estou até hoje.
                         O estágio é focado em desenvolver sistemas para o próprio uso da universidade, sendo assim
                         fiz o uso de <span className="bold">PHP, PostgreSQL, HTML 5, CSS 3, JavaScript, Bootstrap,
-                        Jquery, Angular 7</span>, entre outros.
+                        Jquery, Angular 7</span>, entre outras tecnologias.
                     </p>
                 </div>
             </section>
@@ -159,28 +187,12 @@ const Main = () => {
                 <h2 className="font-teal">Fale comigo</h2>
                 <p className="description">Sinta-se a vontade de puxar assunto comigo</p>
 
-                <div id="social-media">
-                    <h3 className="font-green-haze">Redes Sociais</h3>
-                </div>
-                <div id="form">
-                    <h3 className="font-green-haze">Formulário</h3>
+                <div className="flex row">
+                    <div id="social-media" className="flex flex-column">
+                        <h3 className="font-green-haze">Redes Sociais</h3>
+                    </div>
 
-                    <form action="">
-
-                        <label htmlFor="name">Nome</label>
-                        <input id="name" name="name" type="text"/>
-
-                        <label htmlFor="email">Email</label>
-                        <input id="email" name="email" type="email"/>
-
-                        <label htmlFor="">Assunto</label>
-                        <input id="" name="" type="text"/>
-
-                        <label htmlFor="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="10"></textarea>
-
-                        <button type="submit">Enviar</button>
-                    </form>
+                    <Form/>
                 </div>
             </section>
 
@@ -188,9 +200,7 @@ const Main = () => {
                 Rodapé
             </footer>
 
-            <div id="color-mode">
-                <img src="/assets/imgs/dark.svg" alt="Ativar modo escuro"/>
-            </div>
+            <ChangeColor/>
         </Fragment>
     );
 };

@@ -1,0 +1,16 @@
+@import "../../styles/functions";
+
+#color-mode {
+  position: fixed;
+  bottom: calcSize(1px);
+  right: calcSize(2px);
+
+  img {
+    height: calcSize(5px);
+    cursor: pointer;
+  }
+
+  .light {
+
+  }
+}

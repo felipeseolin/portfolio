@@ -1,0 +1,33 @@
+@import "../../styles/functions";
+@import "../../styles/colors";
+
+form {
+
+  input {
+    width: 100%;
+    min-height: calcSize(2px);
+    border: 1px solid #ccc;
+    border-radius: calcSize(1px);
+    padding: calcSize(1px);
+    margin: calcSize(1px) 0;
+
+    &:hover:focus {
+      border-color: $greenery;
+    }
+  }
+
+  textarea {
+    @extend input;
+  }
+
+  button {
+    margin: calcSize(1px) 0;
+    padding: calcSize(1px) calcSize(2px);
+    border-color: transparent;
+    background-color: $teal;
+    border-radius: calcSize(1px);
+    color: white;
+    font-size: 1.2rem;
+  }
+
+}

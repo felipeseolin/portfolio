@@ -101,18 +101,3 @@ a {
 .flex-space-evenly {
   justify-content: space-evenly;
 }
-
-
-
-// COLOR MODE
-
-#color-mode {
-  position: fixed;
-  bottom: calcSize(1px);
-  right: calcSize(2px);
-
-  img {
-    height: calcSize(5px);
-    cursor: pointer;
-  }
-}
