@@ -1,4 +1,16 @@
 @import "../../styles/functions";
+@import "../../styles/colors";
+
+
+@keyframes teste {
+
+  from {
+    border-bottom: 0 solid transparent;
+  }
+  to {
+    border-bottom: 1px solid $observatory;
+  }
+}
 
 .hero {
   height: 100vh;
@@ -9,17 +21,68 @@
 #about-me {
 
   height: 100vh;
+  margin: 0;
 
-  img {
+
+  .photo {
     border-radius: 50%;
-    height: 200px;
+    min-height: 200px;
+    min-width: 200px;
     margin-right: calcSize(2px);
+    background-image: url("/assets/imgs/me3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   h1 {
     margin-bottom: calcSize(2px);
     font-size: 2rem;
+    animation-name: teste;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
   }
+
 }
 
+ul {
+  list-style: none;
+
+  li {
+    margin: calcSize(1px);
+    border-bottom: solid 1px $fruit-salad;
+
+    &:hover {
+      color: $fruit-salad;
+      border-color: $green-haze;
+    }
+  }
+
+}
+
+
+#contacts {
+
+  a {
+
+    img {
+      height: calcSize(4px);
+      margin: 0 calcSize(1px) 0 0;
+      -webkit-filter: opacity(.5) drop-shadow(0 0 0 $fruit-salad);
+      filter: opacity(.5) drop-shadow(0 0 0 $fruit-salad);
+
+
+      &:hover {
+        fill: $green-haze;
+        -webkit-filter: opacity(.5) drop-shadow(0 0 0 $greenery);
+        filter: opacity(.5) drop-shadow(0 0 0 $greenery);
+      }
+
+    }
+
+  }
+
+}
 

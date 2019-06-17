@@ -14,7 +14,7 @@ const Works = () => (
                 No meu estágio tive a oportunidade de trabalhar com alguns sistemas Web para a universidade e também
                 já me aventurei fazendo alguns sites.
             </p>
-            <div className="flex works-imgs">
+            <div className="flex center flex-space-evenly works-imgs">
                 <a href="https://apoio.cp.utfpr.edu.br/Intranet/" target="_blank">
                     <img src="/assets/imgs/apoio.png" alt="Sistemas de Apoio ao Câmpus"/>
                 </a>

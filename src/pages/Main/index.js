@@ -6,33 +6,35 @@ import ChangeColor from "../../components/ChangeColor";
 import Works from "../../components/Works";
 import Form from "../../components/Form";
 
+
 const Main = () => {
     return (
         <Fragment>
             <Nav/>
 
-            <section id="home" className="hero flex center-all blue-lagoon">
-                <h1>Talvez vai alguma frase</h1>
-            </section>
+            <ScrollAnimation animateIn="fadeIn" duration="2">
+                <section id="about-me" className="flex nowrap center-all">
+                    {/*<img src="/assets/imgs/me.JPG" alt="Foto do Felipe Seolin Bento"/>*/}
+                    <div className="photo"></div>
+                    <div>
 
-            <section id="about-me" className="flex nowrap center-all">
-                <img src="https://picsum.photos/id/565/500/500" alt="Foto do Felipe Seolin Bento"/>
-                <div>
-                    <ScrollAnimation animateIn="fadeIn" duration="2">
                         <h1 className="font-blue-lagoon">Felipe Seolin Bento</h1>
-                    </ScrollAnimation>
-                    <p>
-                        Eu sou um aluno de Engenharia de Software na Universidade Tecnológica Federal do Paraná, câmpus
-                        Cornélio Procópio e este é o meu portfólio, fique a vontade de ver e conhecer um pouco mais
-                        sobre mim e sobre o meu trabalho.
-                        É importante ressaltar que esta página está sempre em construção!
-                    </p>
-                    <p>
-                        Se desejar baixar meu currículo (CV) é só clicar <a href="https://google.com"> aqui</a>.
-                    </p>
-                </div>
 
-            </section>
+                        <p>
+                            Eu sou um aluno de Engenharia de Software na Universidade Tecnológica Federal do Paraná,
+                            câmpus
+                            Cornélio Procópio e este é o meu portfólio, fique a vontade de ver e conhecer um pouco mais
+                            sobre mim e sobre o meu trabalho.
+                            É importante ressaltar que esta página está sempre em construção!
+                        </p>
+                        <p>
+                            Se desejar baixar meu currículo (CV) é só clicar
+                            <a href="/assets/pdf/CV.pdf" target="_blank"> aqui</a>.
+                        </p>
+                    </div>
+
+                </section>
+            </ScrollAnimation>
 
             <section id="details">
                 <h2 className="font-teal">Detalhes</h2>
@@ -42,8 +44,8 @@ const Main = () => {
                 </p>
                 <div id="interests">
                     <h3 className="font-green-haze">Interesses</h3>
-                    <p>Estes são alguns dos interesses que eu possuo atualmente:</p>
-                    <ul>
+                    <p className="description">Estes são alguns dos interesses que eu possuo atualmente:</p>
+                    <ul className="flex">
                         <li>Desenvolvimento Web</li>
                         <li>Web Design</li>
                         <li>Design Gráfico</li>
@@ -62,7 +64,7 @@ const Main = () => {
                         sete anos de curso no CCAA finalizando no nível master.
                     </p>
                     <p>Como já disse gostaria de aprender novos idiomas entre eles estão:</p>
-                    <ul>
+                    <ul className="flex">
                         <li>Italiano</li>
                         <li>Francês</li>
                         <li>Alemão</li>
@@ -72,11 +74,13 @@ const Main = () => {
                 <div id="formation">
                     <h3 className="font-green-haze">Formação</h3>
 
-                    <h4><a href="http://portal.utfpr.edu.br" target="_blank">
+                    <h4>
                         UTFPR - Universidade Tecnológica Federal do Parana
-                    </a></h4>
+                    </h4>
                     <p>2017 - atualmente</p>
-                    <p>Cursando bacharelado em Engenharia de Software</p>
+                    <p>
+                        Cursando bacharelado em Engenharia de Software, com previsao de termino para 2020.
+                    </p>
 
                     <h4>Colégio Passo a Passo</h4>
                     <p>2014 - 2016</p>
@@ -94,9 +98,9 @@ const Main = () => {
 
             <section id="skills">
                 <h2 className="font-teal">Habilidades</h2>
-                <p>Abaixo estão listadas algumas de minhas habilidades.</p>
+                <p className="description">Abaixo estão listadas algumas de minhas habilidades.</p>
 
-                <ul>
+                <ul className="flex center">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>SASS</li>
@@ -190,14 +194,59 @@ const Main = () => {
                 <div className="flex row">
                     <div id="social-media" className="flex flex-column">
                         <h3 className="font-green-haze">Redes Sociais</h3>
+
+                        <div className="flex">
+                            <a href="https://www.facebook.com/felipe.seolinbento" target="_blank">
+                                <img src="/assets/icons/facebook.svg" alt="Facebook"/>
+                            </a>
+
+                            <a href="https://www.instagram.com/felipesebe" target="_blank">
+                                <img src="/assets/icons/instagram.svg" alt="Instagram"/>
+                            </a>
+
+                            <a href="https://github.com/felipeseolin" target="_blank">
+                                <img src="/assets/icons/github.svg" alt="Github"/>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/felipe-seolin-bento-55a915152" target="_blank">
+                                <img src="/assets/icons/linkedin.svg" alt="LinkedIn"/>
+                            </a>
+
+                            <a href="mailto:bentof@alunos.utfpr.edu.br" title="Email Institucional" target="_blank">
+                                <img src="/assets/icons/mail.svg" alt="Email Institucional"/>
+                            </a>
+
+                            <a href="mailto:felipe.seolin@hotmail.com" title="Email Pessoal" target="_blank">
+                                <img src="/assets/icons/outlook.svg" alt="Email Pessoal"/>
+                            </a>
+
+                            <a href="phone:+5544998483634" target="_blank">
+                                <img src="/assets/icons/whatsapp.svg" alt="WhatsApp"/>
+                            </a>
+                        </div>
                     </div>
 
                     <Form/>
                 </div>
             </section>
 
-            <footer>
-                Rodapé
+            <footer className="flex center-all flex-column blue-lagoon font-white">
+                <h3>Felipe Seolin Bento</h3>
+                <p>
+                    <a className="font-white" href="phone:+5544998483634">
+                         +55 (44) 99848-3634
+                    </a>
+                </p>
+                <p>
+                    <a className="font-white bold" href="mailto:felipe.seolin@hotmail.com">
+                        felipe.seolin@hotmail.com
+                    </a>
+                </p>
+                <p>
+                    <a className="font-white bold" href="mailto:bentof@alunos.utfpr.edu.br">
+                        bentof@alunos.utfpr.edu.br
+                    </a>
+                </p>
             </footer>
 
             <ChangeColor/>

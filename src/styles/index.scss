@@ -16,9 +16,9 @@ body {
 }
 
 section {
-  margin: calcSize(2px) 0;
+  margin: calcSize(12px) 0;
   padding: 0 20vw;
-  min-height: 100vh;
+  //min-height: 100vh;
 
   h2 {
     padding-top: calcSize(2px);
@@ -26,7 +26,7 @@ section {
   }
 
   & > div {
-    min-height: 30vh;
+    //min-height: 30vh;
     margin-top: calcSize(4px);
   }
 }
@@ -48,6 +48,18 @@ a {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 0 3vw;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+}
+
 
 .bold {
   font-weight: bold;
@@ -63,7 +75,7 @@ a {
 
 
 .description {
-  font-size: .8em;
+  font-size: .9em;
   text-indent: 0;
   padding: 3px;
   margin: 0;

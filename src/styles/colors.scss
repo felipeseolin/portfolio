@@ -5,6 +5,9 @@ $green-haze: #019967;
 $observatory: #008C75;
 $teal: #007D80;
 $blue-lagoon: #006E84;
+$black: #424242;
+$white: #f2f2f2;
+$light-gray: #cccccc;
 
 .greenery {
   background-color: $greenery;
@@ -30,6 +33,18 @@ $blue-lagoon: #006E84;
   background-color: $blue-lagoon;
 }
 
+.black {
+  background-color: $black;
+}
+
+.white {
+  background-color: $white;
+}
+
+.light-gray {
+  background-color: $light-gray;
+}
+
 .font-greenery {
   color: $greenery;
 }
@@ -52,4 +67,17 @@ $blue-lagoon: #006E84;
 
 .font-blue-lagoon {
   color: $blue-lagoon;
+}
+
+.font-black {
+  color: $black;
+}
+
+
+.font-white {
+  color: $white;
+}
+
+.font-light-gray {
+  color: $light-gray;
 }
