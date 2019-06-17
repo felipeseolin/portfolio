@@ -1,6 +1,15 @@
 import React from "react";
 import "./styles.scss";
 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 const Nav = () => (
     <>
         <nav>
@@ -27,6 +36,11 @@ const Nav = () => (
                     </li>
                     <li>
                         <a href="">Contatos</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" className="icon" onClickCapture="myFunction()">
+                            <i className="fa fa-bars"></i>
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -96,8 +96,8 @@ const Main = () => {
                 </div>
             </section>
 
-            <section id="skills">
-                <h2 className="font-teal">Habilidades</h2>
+            <section id="skills" className="green-haze font-white">
+                <h2>Habilidades</h2>
                 <p className="description">Abaixo estão listadas algumas de minhas habilidades.</p>
 
                 <ul className="flex center">
@@ -136,12 +136,12 @@ const Main = () => {
 
             <Works/>
 
-            <section id="more">
-                <h2 className="font-teal">Maiores Informações</h2>
+            <section id="more" className="teal font-white">
+                <h2>Maiores Informações</h2>
                 <p className="description">Saiba mais a respeito da minha biografia e do meu contato com a profissão</p>
 
                 <div id="biography">
-                    <h3 className="font-green-haze">Biografia</h3>
+                    <h3>Biografia</h3>
                     <p>
                         Nasci em 09 de abril de 1999 na cidade de Terra Rica, estado do Paraná, sempre fui alguém
                         muito esforçado e responsável que procura cada vez mais melhorar a si mesmo.
@@ -166,7 +166,7 @@ const Main = () => {
                 </div>
 
                 <div id="work-review">
-                    <h3 className="font-green-haze">Contato com a profisão</h3>
+                    <h3>Contato com a profisão</h3>
 
                     <h4>Design Gráfico / WebDesign</h4>
                     <p>
@@ -212,15 +212,15 @@ const Main = () => {
                                 <img src="/assets/icons/linkedin.svg" alt="LinkedIn"/>
                             </a>
 
-                            <a href="mailto:bentof@alunos.utfpr.edu.br" title="Email Institucional" target="_blank">
+                            <a href="mailto:bentof@alunos.utfpr.edu.br" title="Email Institucional">
                                 <img src="/assets/icons/mail.svg" alt="Email Institucional"/>
                             </a>
 
-                            <a href="mailto:felipe.seolin@hotmail.com" title="Email Pessoal" target="_blank">
+                            <a href="mailto:felipe.seolin@hotmail.com" title="Email Pessoal">
                                 <img src="/assets/icons/outlook.svg" alt="Email Pessoal"/>
                             </a>
 
-                            <a href="phone:+5544998483634" target="_blank">
+                            <a href="phone:+5544998483634">
                                 <img src="/assets/icons/whatsapp.svg" alt="WhatsApp"/>
                             </a>
                         </div>

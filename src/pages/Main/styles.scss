@@ -52,11 +52,11 @@ ul {
 
   li {
     margin: calcSize(1px);
-    border-bottom: solid 1px $fruit-salad;
+    border-bottom: solid 1px $blue-lagoon;
 
     &:hover {
-      color: $fruit-salad;
-      border-color: $green-haze;
+      color: $blue-lagoon;
+      border-color: $teal;
     }
   }
 

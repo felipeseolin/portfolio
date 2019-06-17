@@ -11,9 +11,11 @@ form {
     padding: calcSize(1px);
     margin: calcSize(1px) 0;
 
-    &:hover:focus {
+    &:hover, &:focus, &:checked {
       border-color: $greenery;
+      border-radius: calcSize(1px);
     }
+
   }
 
   textarea {
