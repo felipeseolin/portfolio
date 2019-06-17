@@ -1,7 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import './styles.scss';
 
-const Works = () => (
+class Works extends Component {
+
+    state = {
+        imgSize: 21
+    };
+
+    render() {
+        let imgs = [];
+
+        for(let i = 1; i <= this.state.imgSize; i++) {
+            const src = `/assets/imgs/design${i}.jpg`;
+            imgs.push(<img src={src} alt={i} />);        }
+        return (
     <>
         <section id="works">
             <h2 className="font-teal">Trabalhos Desenvolvidos</h2>
@@ -31,8 +43,13 @@ const Works = () => (
                 Com Design Gráfico sempre realizei trabalhos sem intenções lucrativas. Já fiz trabalhos para projetos
                 da universidade, igrejas e entre outros.
             </p>
+            <div className = "flex center flex-space-evenly works-imgs">
+                {imgs}
+            </div>
 
         </section>
     </>
-);
+        )}
+}
+
 export default Works;
