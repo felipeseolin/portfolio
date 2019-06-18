@@ -1,49 +1,48 @@
 import React from "react";
 import "./styles.scss";
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+function collapseNav() {
+    const $navbar = document.querySelector('#topNavbar');
+
+    if ($navbar.classList.contains('responsive')) {
+        $navbar.classList.remove('responsive');
     } else {
-        x.className = "topnav";
+        $navbar.classList.add('responsive');
     }
 }
 
 const Nav = () => (
     <>
-        <nav>
-
-            <div className="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul className="flex flex-space-evenly">
-                    <li>
-                        <a href="#">Início</a>
-                    </li>
-                    <li>
-                        <a href="#">Detalhes</a>
-                    </li>
-                    <li>
-                        <a href="">Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="">Meus trabalhos</a>
-                    </li>
-                    <li>
-                        <a href="">Mais Informações</a>
-                    </li>
-                    <li>
-                        <a href="">Contatos</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" className="icon" onClickCapture="myFunction()">
-                            <i className="fa fa-bars"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <nav id="topNavbar" className="topnav font-Oswald">
+            <ul>
+                <li>
+                    <a href="#" className="active font-Oswald uppercase">Felipe Seolin Bento</a>
+                </li>
+                <li>
+                    <a href="#">Início</a>
+                </li>
+                <li>
+                    <a href="#contact">Detalhes</a>
+                </li>
+                <li>
+                    <a href="#about">Habilidades</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="">Informações</a>
+                </li>
+                <li>
+                    <a href="">Fale Comigo</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" className="icon" onClick={collapseNav}>&#9776;</a>
+                </li>
+            </ul>
         </nav>
     </>
 );

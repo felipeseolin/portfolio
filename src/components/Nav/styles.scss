@@ -1,68 +1,93 @@
-nav ul {
+@import "../../styles/colors";
+@import "../../styles/functions";
+
+.topnav {
+  overflow: hidden;
+  background-color: $blue-lagoon;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+
+  ul {
     list-style: none;
-}
+    border: none;
+    padding: 0;
+    margin: 0;
 
-nav {
-    background-color: aqua;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
+    li {
+      list-style: none;
+      border: none;
+      padding: 0;
+      margin: 0;
 
-  a {
-    text-decoration: none;
-    color: initial;
-  }
-}
+      a {
+        float: left;
+        display: block;
+        color: $white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
 
+        &:hover {
+          background-color: $teal;
+          color: white;
+        }
 
-.Navbar {
-  background-color: #46ACC2;
-  display: flex;
-  padding: 16px;
-  font-family: sans-serif;
-  color: white;
-}
+      }
 
-.Navbar__Link {
-  padding-right: 8px;
-}
+    }
 
-.Navbar__Items {
-  display: flex;
-}
-
-.Navbar__Items--right {
-  margin-left:auto;
-}
-
-.Navbar__Link-toggle {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
   }
 
-  .Navbar__Items {
-    display:none;
+  .icon {
+    display: none;
   }
 
-  .Navbar__Items--right {
-    margin-left:0;
+}
+
+.active {
+  background-color: $black;
+  color: $white !important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1110px) {
+  .topnav ul li:not(:first-child) {
+    display: none;
   }
 
-  .Navbar__ToggleShow {
-    display: flex;
+  .topnav ul li:last-child {
+    float: right;
+    display: block;
+
+    a.icon {
+      float: right;
+      display: block;
+    }
+
   }
 
-  .Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
+  .topnav.responsive {
+    position: relative;
+    display: block;
+
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    ul, li, a {
+      float: none;
+      display: block !important;
+      text-align: left;
+    }
   }
 }

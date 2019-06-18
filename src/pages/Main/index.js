@@ -195,7 +195,7 @@ const Main = () => {
                     <div id="social-media" className="flex flex-column">
                         <h3 className="font-green-haze">Redes Sociais</h3>
 
-                        <div className="flex">
+                        <div className="flex center-all">
                             <a href="https://www.facebook.com/felipe.seolinbento" target="_blank">
                                 <img src="/assets/icons/facebook.svg" alt="Facebook"/>
                             </a>

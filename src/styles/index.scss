@@ -11,7 +11,6 @@
 }
 
 body {
-  padding-top: 50px;
   margin: 0;
 }
 
@@ -70,6 +69,9 @@ a {
   text-decoration: underline;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
 
 .description {
   font-size: .9em;
