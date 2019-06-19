@@ -14,19 +14,6 @@ body {
   margin: 0;
 }
 
-section {
-  padding: calcSize(12px) 20vw;
-
-  h2 {
-    padding-top: calcSize(2px);
-    margin-bottom: 0;
-  }
-
-  & > div {
-    margin-top: calcSize(4px);
-  }
-}
-
 p {
   line-height: 1.4rem;
   text-indent: 2rem;
