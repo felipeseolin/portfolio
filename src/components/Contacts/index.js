@@ -40,7 +40,7 @@ const Contacts = () => (
                             <img src="/assets/icons/outlook.svg" alt="Email Pessoal"/>
                         </a>
 
-                        <a href="phone:+5544998483634">
+                        <a href="tel:+5544998483634">
                             <img src="/assets/icons/whatsapp.svg" alt="WhatsApp"/>
                         </a>
                     </div>

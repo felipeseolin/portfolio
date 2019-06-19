@@ -1,3 +1,12 @@
+@import "../../styles/functions";
+@import "../../styles/colors";
+
 .blogPreview {
-  border: #cccccc solid 1px;
+
+  background-color: $teal;
+  color: $white;
+  width: 70vw;
+  padding: calcSize(3px);
+  margin-bottom: calcSize(2px);
+
 }

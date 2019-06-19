@@ -7,6 +7,8 @@ class Blog extends Component {
         id: 0,
         title: 'título',
         text: 'texto',
+        imgSrc: '',
+        imgAlt: '',
     };
 
     componentDidMount() {
@@ -61,6 +63,8 @@ class Blog extends Component {
                     <a href="/">Voltar para a página principal</a>
                     <h1 className="font-blue-lagoon">Blog</h1>
 
+                    <img className="blogImage" src="https://picsum.photos/800" alt="Blog Image"/>
+                    <div className="blogImage" ></div>
                     <Section
                         title={this.state.title}
                     >

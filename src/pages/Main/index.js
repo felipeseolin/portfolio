@@ -30,12 +30,15 @@ const Main = () => {
                 idSec="blog"
                 classes="section"
                 title="Blog"
+                description="Quer saber um pouco mais sobre o que eu ando pensando? Leia meu blog!"
             >
+                <div className="flex flex-space-evenly">
                 <BlogPreview
                     title="Processo de Software"
                     text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
                     "
                     link="/blog/1"
+                    imgPath=""
                 />
                 <BlogPreview
                     title="Processo de Software"
@@ -49,6 +52,7 @@ const Main = () => {
                     "
                     link="/blog/3"
                 />
+                </div>
             </Section>
 
             <Works/>

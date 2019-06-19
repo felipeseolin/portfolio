@@ -1,4 +1,5 @@
 @import "../../styles/functions";
+@import "../../styles/colors";
 
 #color-mode {
   position: fixed;
@@ -10,7 +11,13 @@
     cursor: pointer;
   }
 
-  .light {
-
-  }
 }
+
+.dark {
+  transition: all 0.3s;
+  color: $white !important;
+  background-color: $black !important;
+  text-shadow: none !important;
+  box-shadow: none;
+}
+
