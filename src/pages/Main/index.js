@@ -41,13 +41,13 @@ const Main = () => {
                     title="Processo de Software"
                     text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
                     "
-                    link="/blog/1"
+                    link="/blog/2"
                 />
                 <BlogPreview
                     title="Processo de Software"
                     text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
                     "
-                    link="/blog/1"
+                    link="/blog/3"
                 />
             </Section>
 
