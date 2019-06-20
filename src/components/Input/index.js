@@ -5,7 +5,6 @@ class Input extends Component {
 
     componentDidMount() {
         const $input = document.querySelector(`#${this.props.inputId}`);
-        console.log(this.props.required);
         if (this.props.required) {
             $input.setAttribute('required', 'required');
         }

@@ -4,10 +4,9 @@ import './styles.scss';
 class Textarea extends Component {
 
     componentDidMount() {
-        const $input = document.querySelector(`#${this.props.id}`);
-        console.log(this.props.required);
+        const $textarea = document.querySelector(`#${this.props.id}`);
         if (this.props.required) {
-            $input.setAttribute('required', 'required');
+            $textarea.setAttribute('required', 'required');
         }
     }
 
