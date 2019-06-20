@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import Section from "../Section";
+import List from "../List";
 
 const Skills = () => (
     <>
@@ -10,7 +11,7 @@ const Skills = () => (
             description="Abaixo estão listadas algumas de minhas habilidades."
             classes="green-haze font-white section"
         >
-            <ul className="flex center">
+            <List classes="flex center list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>SASS</li>
@@ -37,7 +38,7 @@ const Skills = () => (
                 <li>Corel Draw</li>
                 <li>Comunicação</li>
                 <li>Liderança em Projetos</li>
-            </ul>
+            </List>
         </Section>
     </>
 );

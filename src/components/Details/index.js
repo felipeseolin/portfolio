@@ -1,6 +1,8 @@
 import React from 'react';
+import './styles.scss';
 import Section from "../Section";
 import SubSection from "../SubSection";
+import List from "../List";
 
 const Details = () => (
     <>
@@ -16,13 +18,13 @@ const Details = () => (
                 title="Interesses"
                 description="Estes são alguns dos interesses que eu possuo atualmente:"
             >
-                <ul className="flex center-all">
+                <List classes="list flex center-all">
                     <li>Desenvolvimento Web</li>
                     <li>Web Design</li>
                     <li>Design Gráfico</li>
                     <li>Processamento Digital de Imagens</li>
                     <li>Inteligência Artificial</li>
-                </ul>
+                </List>
             </SubSection>
 
             <SubSection
@@ -38,11 +40,11 @@ const Details = () => (
                     sete anos de curso no CCAA finalizando no nível master.
                 </p>
                 <p>Como já disse gostaria de aprender novos idiomas entre eles estão:</p>
-                <ul className="flex">
+                <List classes="flex list">
                     <li>Italiano</li>
                     <li>Francês</li>
                     <li>Alemão</li>
-                </ul>
+                </List>
 
             </SubSection>
 

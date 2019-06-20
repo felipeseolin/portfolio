@@ -22,8 +22,8 @@ const Home = () => (
                     </p>
 
                     <p>
-                        Se desejar baixar meu currículo (CV) é só clicar
-                        <a href="/assets/pdf/CV.pdf" target="_blank"> aqui</a>.
+                        Caso desejar visualizar ou baixar meu currículo (CV) é só
+                        <a href="/assets/pdf/CV.pdf" target="_blank"> clicar aqui</a>.
                     </p>
                 </div>
             </Section>
