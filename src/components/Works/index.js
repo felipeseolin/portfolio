@@ -13,7 +13,7 @@ class Works extends Component {
         let imgs = [];
 
         for (let i = 1; i <= this.state.imgSize; i++) {
-            const src = `/assets/imgs/design${i}.jpg`;
+            const src = `${process.env.PUBLIC_URL}/assets/imgs/design${i}.jpg`;
             imgs.push(<img key={i} src={src} alt={i}/>);
         }
         return (
@@ -35,14 +35,14 @@ class Works extends Component {
                         </p>
                         <div className="flex center flex-space-evenly works-imgs">
                             <a href="https://apoio.cp.utfpr.edu.br/Intranet/" target="_blank" rel="noopener noreferrer">
-                                <img src="/assets/imgs/apoio.png" alt="Sistemas de Apoio ao Câmpus"/>
+                                <img src={process.env.PUBLIC_URL + '/assets/imgs/apoio.png'} alt="Sistemas de Apoio ao Câmpus"/>
                             </a>
                             <a href="https://apoio.cp.utfpr.edu.br/apptv/" target="_blank" rel="noopener noreferrer">
-                                <img src="/assets/imgs/tv.png" alt="TV do Câmpus"/>
+                                <img src={process.env.PUBLIC_URL + '/assets/imgs/tv.png'} alt="TV do Câmpus"/>
                             </a>
                             <a href="https://felipeseolin.github.io/abrindo-portas/" target="_blank"
                                rel="noopener noreferrer">
-                                <img src="/assets/imgs/abrindo-portas.png" alt="Abrindo Portas"/>
+                                <img src={process.env.PUBLIC_URL + '/assets/imgs/abrindo-portas.png'} alt="Abrindo Portas"/>
                             </a>
                         </div>
                     </SubSection>

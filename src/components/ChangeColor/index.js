@@ -36,7 +36,8 @@ class ChangeColor extends Component {
         return (
             <>
                 <div id="color-mode">
-                    <img id="changeColor" className="light" src="/assets/icons/dark.svg" alt="Ativar modo escuro"
+                    <img id="changeColor" className="light" src={process.env.PUBLIC_URL + '/assets/icons/dark.svg'}
+                         alt="Ativar modo escuro"
                          onClick={changeColor} title="Come to the dark side!"
                     />
                 </div>
