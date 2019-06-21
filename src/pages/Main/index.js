@@ -36,19 +36,19 @@ const Main = () => {
                     <BlogPreview
                         title="Gerência da Configuração"
                         text="Um pouco sobre um trabalho de uma disciplina."
-                        link="/blog/1"
+                        link="#/blog/1"
                         imgPath="/assets/imgs/gc.jpeg"
                     />
                     <BlogPreview
                         title="Frameworks Javascript"
                         text="Uma visão sobre frameworks javascript."
-                        link="/blog/2"
+                        link="#/blog/2"
                         imgPath="/assets/imgs/js.png"
                     />
                     <BlogPreview
                         title="Notícia sobre IA"
                         text="A IA do Google já está vencendo jogadores em jogos FPS e isso é incrível."
-                        link="/blog/3"
+                        link="#/blog/3"
                         imgPath="/assets/imgs/ia.jpg"
                     />
                 </div>

@@ -34,7 +34,7 @@ class Blog extends Component {
                         'primeira iteração. Eu particularmente achei o trabalho muito interessante, pois foi a primeira ' +
                         'vez que consegui observar um processo e como se dá a gerência de configuração neste. Talvez ' +
                         'nas férias iniciarei uma conta no Medium e farei um post sobre o assunto.',
-                    img: {backgroundImage: 'url("/assets/imgs/gc.jpeg")'}
+                    img: {backgroundImage: 'url("' + process.env.PUBLIC_URL + '/assets/imgs/gc.jpeg")'}
                 });
                 break;
 
@@ -50,7 +50,7 @@ class Blog extends Component {
                         'programar. Ainda gostaria de aprender React Native, Ionic (que pelo que vi rapidamente é ' +
                         'muito parecido com Angular 2) e Electron, sendo que nas férias espero desenvolver um app ' +
                         'desktop com o mesmo.',
-                    img: {backgroundImage: 'url("/assets/imgs/js.png")'}
+                    img: {backgroundImage: 'url("' + process.env.PUBLIC_URL + '/assets/imgs/js.png")'}
                 });
                 break;
 
@@ -64,7 +64,7 @@ class Blog extends Component {
                         'de inteligência artifical ainda tem muito a crescer e espero muito aprender sobre isto no ' +
                         ' futuro. Disponível em: ' +
                         'https://www.tecmundo.com.br/software/142082-ia-google-vence-humanos-partidas-multiplayer-jogos-fps.htm',
-                    img: {backgroundImage: 'url("/assets/imgs/ia.jpg")'}
+                    img: {backgroundImage: 'url("' + process.env.PUBLIC_URL + '/assets/imgs/ia.jpg")'}
                 });
                 break;
 
@@ -82,7 +82,7 @@ class Blog extends Component {
         return (
             <>
                 <div className="flex flex-column section">
-                    <a href="/">Voltar para a página principal</a>
+                    <a href={process.env.PUBLIC_URL + '/#'}>Voltar para a página principal</a>
                     <h1 className="font-blue-lagoon">Blog</h1>
 
                     <div className="blogImage" style={this.state.img}></div>

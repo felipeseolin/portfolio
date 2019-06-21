@@ -62,3 +62,6 @@ typings/
 
 # WebStorm and JebBrains IDEs
 .idea
+
+# Ignore deploy
+build/
