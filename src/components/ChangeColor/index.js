@@ -11,7 +11,7 @@ class ChangeColor extends Component {
         let colorLight = true;
 
         function changeColor() {
-            const $all = document.querySelectorAll('section, div');
+            const $all = document.querySelectorAll('section, div, input, textarea');
             const $img = document.querySelector('#changeColor');
 
             if (colorLight) {

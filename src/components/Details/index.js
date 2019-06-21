@@ -24,6 +24,7 @@ const Details = () => (
                     <li>Design Gráfico</li>
                     <li>Processamento Digital de Imagens</li>
                     <li>Inteligência Artificial</li>
+                    <li title="User Experience">UX</li>
                 </List>
             </SubSection>
 
@@ -33,10 +34,10 @@ const Details = () => (
             >
 
                 <p>
-                    Eu sempre me interessei muito em aprender outras línguas e desejo aprender muitas outras!
-                    Atualmente além do <span className="bold">português</span> que tenho como lingua nativa,
-                    possuo o <span className="bold">español</span> em nível intermediário e o <span
-                    className="bold">english</span> em nível avançado, sendo que para este ultimo possuo mais de
+                    Eu sempre me interessei muito em aprender outros idiomas e desejo aprender muitos outros!
+                    Atualmente além do <span className="bold underline font-fruit-salad">português</span> que tenho como língua nativa,
+                    possuo o <span className="bold underline font-fruit-salad">español</span> em nível intermediário e o <span
+                    className="bold underline font-fruit-salad">english</span> em nível avançado, sendo que para este último possuo mais de
                     sete anos de curso no CCAA finalizando no nível master.
                 </p>
                 <p>Como já disse gostaria de aprender novos idiomas entre eles estão:</p>
@@ -53,11 +54,11 @@ const Details = () => (
                 title="Formação"
             >
                 <h4>
-                    UTFPR - Universidade Tecnológica Federal do Parana
+                    UTFPR - Universidade Tecnológica Federal do Paraná
                 </h4>
                 <p>2017 - atualmente</p>
                 <p>
-                    Cursando bacharelado em Engenharia de Software, com previsao de termino para 2020.
+                    Cursando bacharelado em Engenharia de Software, com previsão de término para 2020.
                 </p>
 
                 <h4>Colégio Passo a Passo</h4>
@@ -70,9 +71,14 @@ const Details = () => (
                 title="Atividades desenvolvidas"
             >
                 <p>
-                    Aqui estão listados alguns projetos que eu já fiz parte, sendo próprios ou em grupo, outros
-                    que eu estou desenvolvendo e alguns que tenho interesse em desenvolver.
+                    Aqui estão listadas algumas atividades que eu desenvolvo.
                 </p>
+                <List classes="flex list">
+                    <li>Desenvolvimento Web - Full Stack</li>
+                    <li>Design Gráfico</li>
+                    <li>Desenvolvimento Desktop</li>
+                    <li>Gerenciamento de Projeto</li>
+                </List>
             </SubSection>
 
         </Section>

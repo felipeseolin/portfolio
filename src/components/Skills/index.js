@@ -38,6 +38,7 @@ const Skills = () => (
                 <li>Corel Draw</li>
                 <li>Comunicação</li>
                 <li>Liderança em Projetos</li>
+                <li>XAMPP</li>
             </List>
         </Section>
     </>

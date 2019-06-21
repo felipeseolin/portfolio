@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import React, {
+    Component
+} from 'react';
 import './styles.scss';
 import Section from "../../components/Section";
 
@@ -7,50 +9,70 @@ class Blog extends Component {
         id: 0,
         title: 'título',
         text: 'texto',
-        imgSrc: '',
-        imgAlt: '',
+        img: {
+            backgroundImage: 'url()'
+        }
     };
 
     componentDidMount() {
         const param = this.props.match.params.id;
-        this.setState({id: param});
+
+        this.setState({
+            id: param
+        });
 
         switch (param) {
             case '1':
                 this.setState({
-                    title: 'Enge'
+                    title: 'Gerência da Configuração',
+                    text: 'Gostaria de compartilhar um pouco do trabalho que estou desenvolvendo na disciplina de ' +
+                        'Gerência da Configuração. Durante todo o semestre todos os alunos deviam em grupo realizar ' +
+                        'um ciclo de vida de um processo de software completo, desde sua montagem até mesmo a entrega e' +
+                        ' manutenção do software. O grupo que fiz parte escolheu se inspirar no FDD, Feature Driven ' +
+                        'Development, e no Scrum  para fazer o seu processo. Logo após, realizamos algumas mudanças, ' +
+                        'desenvolvemos o diagrama BPMN e aplicamos no EPF Composer. Atualmente estamos no meio da ' +
+                        'primeira iteração. Eu particularmente achei o trabalho muito interessante, pois foi a primeira ' +
+                        'vez que consegui observar um processo e como se dá a gerência de configuração neste. Talvez ' +
+                        'nas férias iniciarei uma conta no Medium e farei um post sobre o assunto.',
+                    img: {backgroundImage: 'url("/assets/imgs/gc.jpeg")'}
                 });
+                break;
+
+            case '2':
                 this.setState({
-                    text: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et nunc fermentum,' +
-                        'interdum neque in, scelerisque ante. Integer consequat leo sed orci vehicula, sit amet varius ' +
-                        'ante hendrerit. Quisque sodales orci eu pretium tincidunt. Praesent elit turpis, pulvinar at ' +
-                        'dictum eu, pellentesque placerat lectus. Maecenas eget diam gravida, tincidunt ex id, commodo ' +
-                        'ipsum. Pellentesque vehicula in ipsum sit amet tincidunt. In vitae nibh nec massa lobortis ' +
-                        'euismod.\n' +
-                        '\n' +
-                        'Sed porta, nulla id tincidunt porta, erat nunc placerat enim, in bibendum turpis lorem non ' +
-                        'massa. Ut ac erat at dui maximus facilisis. Nunc sed lobortis ante. Donec feugiat quam in ' +
-                        'justo molestie, vitae ultricies lorem condimentum. Vivamus scelerisque mollis urna, ut ' +
-                        'vestibulum quam commodo eu. Nunc euismod facilisis semper. Vivamus non facilisis urna. Ut ' +
-                        'tempor egestas sodales. Donec tortor augue, aliquam id velit posuere, bibendum vehicula leo. ' +
-                        'Vestibulum posuere dui in quam feugiat porta. Morbi eget nunc est.\n' +
-                        '\n' +
-                        'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; ' +
-                        'Curabitur est est, pellentesque ac accumsan ac, venenatis sodales dolor. In in nunc vitae ' +
-                        'nulla maximus bibendum tempor et nibh. Donec finibus lobortis nisl. Integer posuere erat ' +
-                        'enim, et accumsan nisl interdum ut. Sed lobortis scelerisque mi, eget aliquam diam fermentum ' +
-                        'a. Suspendisse faucibus dictum nunc id pretium. Suspendisse ac pretium libero. Aliquam mi ' +
-                        'lacus, aliquet a elit ut, tempor aliquam leo. Donec eleifend a ante non porta. Phasellus ' +
-                        'vel condimentum velit, sed ultrices justo. '
+                    title: 'Frameworks Javascript',
+                    text: 'Atualmente estou aprendendo React e NodeJS na disciplina de Programação Web 1 e achei estes' +
+                        ' Frameworks muito interessantes, ainda tenho muito a aprender e gostaria de aprofundar ainda ' +
+                        'mais os meus conhecimentos. Já tive a oportunidade de trabalhar com Angular 7 no estágio e ' +
+                        'havia gostado bastante do framework. As comparações entre o Angular e o React são inevitáveis,' +
+                        ' eu particularmente achei que o Angular é mais regulado e organizado, pois obriga o ' +
+                        'desenvolvedor a fazer de tal forma, já o React de certo modo o deixa mais livre para ' +
+                        'programar. Ainda gostaria de aprender React Native, Ionic (que pelo que vi rapidamente é ' +
+                        'muito parecido com Angular 2) e Electron, sendo que nas férias espero desenvolver um app ' +
+                        'desktop com o mesmo.',
+                    img: {backgroundImage: 'url("/assets/imgs/js.png")'}
+                });
+                break;
+
+            case '3':
+                this.setState({
+                    title: 'Notícia sobre IA',
+                    text: 'Vi em uma notícia do Tecmundo que a Inteligência Artificial do Google já está vencendo ' +
+                        'humanos em jogos FPS. Ainda não tenho muito conhecimento sobre a área de IA, porém, me ' +
+                        'interesso muito. Já vi vídeos onde IAs conseguem ganhar de humanos em outros jogos e jogos ' +
+                        'mais complexos que possuem mais variáveis deve ser um desafio para esta. Acredito que a área ' +
+                        'de inteligência artifical ainda tem muito a crescer e espero muito aprender sobre isto no ' +
+                        ' futuro. Disponível em: ' +
+                        'https://www.tecmundo.com.br/software/142082-ia-google-vence-humanos-partidas-multiplayer-jogos-fps.htm',
+                    img: {backgroundImage: 'url("/assets/imgs/ia.jpg")'}
                 });
                 break;
 
             default:
                 this.setState({
-                    title: 'Erro 404'
-                });
-                this.setState({
-                    text: 'Não existe nenhum post neste endereço'
+                    title: 'Erro 404',
+                    text: 'Não existe nenhum post neste endereço',
+                    img: {backgroundImage: 'url("/assets/imgs/404.png")'}
                 });
                 break;
         }
@@ -63,8 +85,7 @@ class Blog extends Component {
                     <a href="/">Voltar para a página principal</a>
                     <h1 className="font-blue-lagoon">Blog</h1>
 
-                    <img className="blogImage" src="https://picsum.photos/800" alt="Blog Image"/>
-                    <div className="blogImage" ></div>
+                    <div className="blogImage" style={this.state.img}></div>
                     <Section
                         title={this.state.title}
                     >

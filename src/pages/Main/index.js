@@ -20,7 +20,7 @@ const Main = () => {
         <Fragment>
             <Nav/>
 
-            <Home />
+            <Home/>
 
             <Details/>
 
@@ -33,25 +33,24 @@ const Main = () => {
                 description="Quer saber um pouco mais sobre o que eu ando pensando? Leia meu blog!"
             >
                 <div className="flex flex-space-evenly">
-                <BlogPreview
-                    title="Processo de Software"
-                    text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
-                    "
-                    link="/blog/1"
-                    imgPath=""
-                />
-                <BlogPreview
-                    title="Processo de Software"
-                    text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
-                    "
-                    link="/blog/2"
-                />
-                <BlogPreview
-                    title="Processo de Software"
-                    text="Gostaria de comentar um pouco sobre um trabalho que estou desenvolvendo.
-                    "
-                    link="/blog/3"
-                />
+                    <BlogPreview
+                        title="Gerência da Configuração"
+                        text="Um pouco sobre um trabalho de uma disciplina."
+                        link="/blog/1"
+                        imgPath="/assets/imgs/gc.jpeg"
+                    />
+                    <BlogPreview
+                        title="Frameworks Javascript"
+                        text="Uma visão sobre frameworks javascript."
+                        link="/blog/2"
+                        imgPath="/assets/imgs/js.png"
+                    />
+                    <BlogPreview
+                        title="Notícia sobre IA"
+                        text="A IA do Google já está vencendo jogadores em jogos FPS e isso é incrível."
+                        link="/blog/3"
+                        imgPath="/assets/imgs/ia.jpg"
+                    />
                 </div>
             </Section>
 
@@ -61,7 +60,7 @@ const Main = () => {
 
             <Contacts/>
 
-           <Footer/>
+            <Footer/>
 
             <ChangeColor/>
         </Fragment>

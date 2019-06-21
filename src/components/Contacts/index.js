@@ -9,7 +9,7 @@ const Contacts = () => (
             idSec="contacts"
             classes="section"
             title="Fale comigo"
-            description="Sinta-se a vontade de puxar assunto comigo"
+            description="Sinta-se a vontade para puxar assunto comigo"
         >
             <div className="flex row">
                 <div id="social-media" className="flex flex-column">

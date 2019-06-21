@@ -45,7 +45,7 @@ const MoreInfo = () => (
                 <h4>Design Gráfico / WebDesign</h4>
                 <p>
                     O primeiro contato profissional que possui foi com a área de design gráfico, já realizando
-                    algusn trabalhos independentes. Atualmente faço menos trabalhos deste tipo, porém
+                    alguns trabalhos independentes. Atualmente faço menos trabalhos deste tipo, porém
                     continuo me interessando muito por esta área e gostaria de aperfeiçoar meus conhecimentos.
                     Isso foi possível graças a um curso profissionalizante de WebDesign onde aprendi
                     <span className="bold"> Photoshop, Corel Draw, Dreamweaver e Flash</span>.
@@ -53,9 +53,11 @@ const MoreInfo = () => (
 
                 <h4>Estágio em Desenvolvimento Web Full Stack</h4>
                 <p>
-                    Em maio de 2018 ingressei no estágio de desenvolvimento web na UTFPR, o qual eu estou até hoje.
-                    O estágio é focado em desenvolver sistemas para o próprio uso da universidade, sendo assim
-                    fiz o uso de <span className="bold">PHP, PostgreSQL, HTML 5, CSS 3, JavaScript, Bootstrap,
+                    Em maio de 2018 ingressei no estágio de desenvolvimento web na UTFPR, na Coordenadoria de Gestão de
+                    Tecnologia da Informação, mais especificamente na Divisão de Projetos de Sistemas de Informação, o
+                    qual eu estou até hoje. O estágio é focado em desenvolver sistemas para o próprio uso da
+                    universidade, sendo assim fiz o uso de
+                    <span className="bold"> PHP, PostgreSQL, HTML 5, CSS 3, JavaScript, Bootstrap,
                         Jquery, Angular 7</span>, entre outras tecnologias.
                 </p>
             </SubSection>
