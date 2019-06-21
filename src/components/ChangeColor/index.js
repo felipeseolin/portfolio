@@ -16,7 +16,7 @@ class ChangeColor extends Component {
 
             if (colorLight) {
                 colorLight = false;
-                $img.src = '/assets/icons/light.svg';
+                $img.src = process.env.PUBLIC_URL + '/assets/icons/light.svg';
                 $img.title = 'Lights on';
 
                 $all.forEach((item) => {
@@ -24,7 +24,7 @@ class ChangeColor extends Component {
                 });
             } else {
                 colorLight = true;
-                $img.src = '/assets/icons/dark.svg';
+                $img.src = process.env.PUBLIC_URL + '/assets/icons/dark.svg';
                 $img.title = 'Come to the dark side';
 
                 $all.forEach((item) => {

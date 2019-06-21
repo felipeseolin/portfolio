@@ -25,4 +25,8 @@
     animation-duration: 5s;
   }
 
+  @media screen and (max-width: 800px) {
+    margin-top: 250px;
+  }
+
 }
