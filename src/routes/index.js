@@ -7,11 +7,11 @@ import Blog from "../pages/Blog";
 class Router extends Component{
     render() {
         return (
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={process.env.PUBLIC_URL + '/'}>
                 <Switch>
-                    <Route exact path="#" component={Main} />
-                    <Route exact path="/" component={Main} />
-                    <Route path="/blog/:id" component={Blog} />
+                    <Route exact path={process.env.PUBLIC_URL + '#'} component={Main} />
+                    <Route exact path={process.env.PUBLIC_URL + '/'} component={Main} />
+                    <Route path={process.env.PUBLIC_URL + '/blog/:id'} component={Blog} />
                 </Switch>
             </BrowserRouter>
         );
