@@ -20,9 +20,8 @@ class Textarea extends Component {
                           name={this.props.id}
                           className={this.props.classes}
                           placeholder={this.props.placeholder}
-                          value={this.props.value}
                           rows={this.props.rows}
-                > </textarea>
+                >{ this.props.value }</textarea>
             </>
         );
     }

@@ -14,7 +14,7 @@ class Works extends Component {
 
         for (let i = 1; i <= this.state.imgSize; i++) {
             const src = `/assets/imgs/design${i}.jpg`;
-            imgs.push(<img src={src} alt={i}/>);
+            imgs.push(<img key={i} src={src} alt={i}/>);
         }
         return (
             <>
@@ -34,13 +34,14 @@ class Works extends Component {
                             já me aventurei fazendo alguns sites.
                         </p>
                         <div className="flex center flex-space-evenly works-imgs">
-                            <a href="https://apoio.cp.utfpr.edu.br/Intranet/" target="_blank">
+                            <a href="https://apoio.cp.utfpr.edu.br/Intranet/" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/imgs/apoio.png" alt="Sistemas de Apoio ao Câmpus"/>
                             </a>
-                            <a href="https://apoio.cp.utfpr.edu.br/apptv/" target="_blank">
+                            <a href="https://apoio.cp.utfpr.edu.br/apptv/" target="_blank" rel="noopener noreferrer">
                                 <img src="/assets/imgs/tv.png" alt="TV do Câmpus"/>
                             </a>
-                            <a href="https://felipeseolin.github.io/abrindo-portas/" target="_blank">
+                            <a href="https://felipeseolin.github.io/abrindo-portas/" target="_blank"
+                               rel="noopener noreferrer">
                                 <img src="/assets/imgs/abrindo-portas.png" alt="Abrindo Portas"/>
                             </a>
                         </div>

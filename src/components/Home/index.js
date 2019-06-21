@@ -5,7 +5,7 @@ import Section from "../Section";
 
 const Home = () => (
     <>
-        <ScrollAnimation animateIn="fadeIn" duration="2">
+        <ScrollAnimation animateIn="fadeIn">
             <Section
                 idSec="about-me"
                 classes="section flex nowrap center-all"

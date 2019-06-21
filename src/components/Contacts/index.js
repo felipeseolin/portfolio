@@ -16,19 +16,20 @@ const Contacts = () => (
                     <h3 className="font-green-haze">Redes Sociais</h3>
 
                     <div className="flex center-all">
-                        <a href="https://www.facebook.com/felipe.seolinbento" target="_blank">
+                        <a href="https://www.facebook.com/felipe.seolinbento" target="_blank" rel="noopener noreferrer">
                             <img src="/assets/icons/facebook.svg" alt="Facebook"/>
                         </a>
 
-                        <a href="https://www.instagram.com/felipesebe" target="_blank">
+                        <a href="https://www.instagram.com/felipesebe" target="_blank" rel="noopener noreferrer">
                             <img src="/assets/icons/instagram.svg" alt="Instagram"/>
                         </a>
 
-                        <a href="https://github.com/felipeseolin" target="_blank">
+                        <a href="https://github.com/felipeseolin" target="_blank" rel="noopener noreferrer">
                             <img src="/assets/icons/github.svg" alt="Github"/>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/felipe-seolin-bento-55a915152" target="_blank">
+                        <a href="https://www.linkedin.com/in/felipe-seolin-bento-55a915152" target="_blank"
+                           rel="noopener noreferrer">
                             <img src="/assets/icons/linkedin.svg" alt="LinkedIn"/>
                         </a>
 
